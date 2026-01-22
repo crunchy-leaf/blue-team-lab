@@ -16,3 +16,13 @@ account during lab testing.
 ## Assessment
 Single-source failed authentication activity. No successful logon observed.
 Activity would be monitored for escalation in a production environment.
+
+## Evidence Screenshots
+
+**Failed authentication event (Event ID 4625):**
+
+![4625 Event Viewer](../images/Event Viewer showing Event ID 4625.png) 
+
+**Failed logon attempt via runas:**
+
+![Runas failure](../images/runas command failure.png)
