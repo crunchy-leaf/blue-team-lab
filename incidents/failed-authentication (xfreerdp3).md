@@ -1,14 +1,14 @@
-#Failed Authentication Incident (Event ID 4625)
+# Failed Authentication Incident (Event ID 4625)
 
-##Summary
+## Summary
 
 A failed Remote Desktop authentication attempt was generated from a Kali Linux attacker system against a Windows Server 2019 target during blue team lab testing.
 
-##Attack Simulation
+## Attack Simulation
 
 The attack originated from a Kali Linux VM using xfreerdp with invalid credentials against the Windows server's RDP service.
 
-#Evidenve
+# Evidenve
 
 -Event ID: 4625
 -Authentication Type: Remote Desktop / Network Logon
@@ -16,14 +16,14 @@ The attack originated from a Kali Linux VM using xfreerdp with invalid credentia
 -Source System: Kali Linux VM
 -Failure Reason: Invalid credentials
 
-#Investigation
+# Investigation
 
 Windows Security logs were reviewed in Event Viewer to identify the failed RDP authentication attempt. Relevant log fields including account name, source IP address, and logon type were analyzed to confirm the origin and nature of the activity.
 
-#Screenshots
+# Screenshots
 
 
-#Assesment 
+# Assesment 
 
 The activity simulated password spraying or unauthorized authentication attempts against a Windows system. In a production environment, repeated events of this type would warrant investigation for possible brute-force activity.
 
