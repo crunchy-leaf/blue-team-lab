@@ -22,6 +22,8 @@ Windows Security logs were reviewed in Event Viewer to identify the failed RDP a
 
 # Screenshots
 
+**xfreerdp3 command used:**
+![Kali xfreerdp3 command](../images/xfreerdp3 command.png)
 
 # Assesment 
 
