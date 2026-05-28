@@ -8,7 +8,7 @@ A failed Remote Desktop authentication attempt was generated from a Kali Linux a
 
 The attack originated from a Kali Linux VM using xfreerdp with invalid credentials against the Windows server's RDP service.
 
-## Evidenve
+## Evidence
 
 - Event ID: 4625
 - Authentication Type: Remote Desktop / Network Logon
