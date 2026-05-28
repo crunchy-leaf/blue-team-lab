@@ -10,11 +10,11 @@ The attack originated from a Kali Linux VM using xfreerdp with invalid credentia
 
 # Evidenve
 
--Event ID: 4625
--Authentication Type: Remote Desktop / Network Logon
--Target Account: testuser
--Source System: Kali Linux VM
--Failure Reason: Invalid credentials
+- Event ID: 4625
+- Authentication Type: Remote Desktop / Network Logon
+- Target Account: testuser
+- Source System: Kali Linux VM
+- Failure Reason: Invalid credentials
 
 # Investigation
 
