@@ -22,11 +22,15 @@ Windows Security logs were reviewed in Event Viewer to identify the failed RDP a
 
 ## Screenshots
 
-**xfreerdp3 command used:**
+**Event log:**
 
-![Kali xfreerdp3 command](../images/xfreerdp3command.png)
+![Event log](../images/4625-event-log.png)
 
-# Assesment 
+**Event Source:**
+
+![Source IP of Event](../images/4625-event-source.png)
+
+## Assesment 
 
 The activity simulated password spraying or unauthorized authentication attempts against a Windows system. In a production environment, repeated events of this type would warrant investigation for possible brute-force activity.
 
