@@ -22,6 +22,10 @@ Windows Security logs were reviewed in Event Viewer to identify the failed RDP a
 
 ## Screenshots
 
+**Command used to attempt RDP session creation:**
+
+![Kali xfreerdp3 command](../images/xfreerdp3-command.png)
+
 **Event log:**
 
 ![Event log](../images/4625-event-log.png)
