@@ -16,6 +16,6 @@ Key Findings:
 - Service banners revealed the domain name lab.local, indicating that the target is functioning as a Windows Active Directory Domain Controller.
 - The presence of SMB, LDAP, and Kerberos provides several opportunities for further enumeration of users, groups, shares, and authentication mechanisms.
 
-## Defender Activity:
+## Defender Findings:
 
 No direct evidence that the reconnaissance activity was observed in the default Windows security logs. This demonstrates a visibility gap that could addressed through enhanced logging solutions such as Sysmon.
