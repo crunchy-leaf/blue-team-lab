@@ -6,7 +6,7 @@ Attempt authentication against exposed services.
 
 ## Attacker Activity:
 
-The attacker attempted to gain an RDP session through an administrative account using variations of known weak credentials. After several attemps the following combination was successful. 
+The attacker attempted to gain an RDP session through an administrative account using variations of known weak credentials. After several attemps one of the combinations was successful.
 
 ## Defender Findings:
 
