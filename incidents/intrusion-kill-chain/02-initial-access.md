@@ -4,6 +4,10 @@
 
 Attempt authentication against exposed services.
 
-## Activity
+## Attacker Activity:
 
-Not started.
+The attacker attempted to gain an RDP session through an administrative account using default credentials. After several attemps the following combination was successful. 
+
+![xfreerdp Command](../../images/intrusion-kill-chain/admin-rdp-attempt.png)
+
+
