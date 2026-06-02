@@ -2,4 +2,4 @@
 
 ## Objective
 
-To be completed.
+Maintain access to the compromised system.
