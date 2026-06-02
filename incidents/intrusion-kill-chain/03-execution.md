@@ -12,6 +12,6 @@ After obtaining access to the target system, basic host enumeration was performe
 
 ## Defender Findings:
 
-While there were no logs pointing directly to an attack happeneing. There is evidence to suggesst an unusual successful login took place since the affected host should have been offline at the time it was accessed.
+While there were no logs pointing directly to an attack happeneing. There is evidence to suggesst an unusual successful login took place just after 9am when the affected user should have been offline. This could suggest that the account is compromised but futher investigation is needed.
 
 ![Suspicious Log](../../images/intrusion-kill-chain/kali-rdp-success.png)
