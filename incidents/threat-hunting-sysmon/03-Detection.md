@@ -1,9 +1,13 @@
 ## Detection
 
-Suspicious activity was identified through Sysmon Event ID 1 (Process Creation Events), which logs process execution along with command-line arguments and parent-child relationships.
+Suspicious activity was identified through analysis of Sysmon telemetry, specifically:
 
-The following types of activity were analyzed:
+- Event ID 1 (Process Creation): Execution of enumeration and system discovery commands
+- Event ID 3 (Network Connection): Evidence of remote authentication sessions and outbound connections
+- Repeated authentication failures followed by successful login
 
-- Command-line execution (cmd.exe)
-- System enumeration commands (whoami, ipconfig, hostname)
-- PowerShell activity
+Initial indicators included:
+
+- Multiple failed Remote Desktop authentication attempts
+- Subsequent successful authentication from same source host
+- Execution of system discovery commands immediately post-login
