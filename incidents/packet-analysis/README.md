@@ -1,19 +1,19 @@
 # Objective:
-The goal of this project is to use the packet catpure program Wireshark to analyze traffic on a network for suspicious activity, and then correlating that data with what I can find in Sysmon/Splunk to try and piece together a full comprehensive timeline of events.
+This project demonstrates a network and endpoint investigation using Wireshark, Sysmon, and Splunk to analyze suspicious network activity and reconstruct a unified timeline of events across multiple data sources. The objective is to simulate a real-world SOC investigation where raw network traffic is correlated with endpoint telemetry to determine whether observed behavior is benign or indicative of reconnaissance or compromise.
 
 ## Environment:
-- Windows 11
-- Kali Linux 
-- Splunk
-- Sysmon
-- Wireshark
+- Windows 11 (Endpoint under investigation)
+- Kali Linux (Attack / scanning simulation host)
+- Splunk (Log aggregation and analysis)
+- Sysmon (Endpoint telemetry collection)
+- Wireshark (Packet capture and network analysis)
 
 ## Scenario:
-While performing routine network monitoring, unusual TCP connection activity was observed in Wireshark originating from a host on the internal network. The traffic consisted of repeated connection attempts to multiple ports on a Windows workstation over a short period of time.
+During routine network monitoring, unusual TCP connection attempts were identified in Wireshark originating from an internal host. The traffic consisted of rapid, repeated connection attempts targeting multiple ports on a Windows workstation within a short time window.
 
-Because this pattern differed from normal user activity and could indicate reconnaissance or unauthorized network scanning, an investigation was initiated to determine the nature of the traffic, identify the source host, and assess the potential impact to the environment.
+This behavior deviated from normal baseline activity and is consistent with potential reconnaissance activity such as port scanning.
 
-The investigation leveraged packet captures from Wireshark, endpoint telemetry collected by Sysmon, and centralized logs in Splunk. Evidence from these sources was analyzed to establish a timeline of events, identify affected systems, and determine whether the activity represented malicious behavior or legitimate network operations.
+An investigation was initiated to determine the source of the traffic, identify targeted services, and assess whether any additional malicious activity occurred on the endpoint.
 
 ---
 
