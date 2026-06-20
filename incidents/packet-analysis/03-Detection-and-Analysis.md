@@ -13,7 +13,7 @@ To determine whether the activity was observable through endpoint telemetry, Sys
 ## Filtered Wireshark capture
 ![Network scan evidence](../../images/packet-analysis/network-scan-evidence.png)
 
-## A Full TCP conversation
+## A full TCP conversation
 ![Three way handshake](../../images/packet-analysis/full-tcp-conversation.png)
 
 ## Wireshark statistics
