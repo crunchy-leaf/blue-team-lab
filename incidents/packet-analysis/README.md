@@ -20,7 +20,6 @@ An investigation was initiated to determine the source of the traffic, identify 
 **This investigation aims to answer the following questions:**
 
 - What system generated the suspicious traffic?
-- What services or ports were targeted?
 - What was the purpose of the observed activity?
 - Is there evidence of compromise beyond the initial network activity?
 - What response actions, if any, are required?
