@@ -10,3 +10,11 @@ The packet capture also identified the source system as the Kali Linux host and 
 
 To determine whether the activity was observable through endpoint telemetry, Sysmon logs were reviewed and correlated within Splunk. No corresponding Sysmon Event ID 3 records were identified for the inbound scan traffic. This result was expected because the Sysmon deployment was limited to the target Windows system, where Event ID 3 primarily records network connections initiated by the local host. Consequently, the packet capture served as the primary source of evidence for reconstructing the events of the investigation.
 
+## Filtered Wireshark capture
+![Network scan evidence](../../images/packet-analysis/network-scan-evidence.png)
+
+## A Full TCP conversation
+![Three way handshake](../../images/packet-analysis/full-tcp-conversation.png)
+
+## Wireshark statistics
+![Network scan evidence](../../images/packet-analysis/statistics.png)
