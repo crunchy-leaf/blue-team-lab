@@ -1,35 +1,133 @@
 # Blue Team Lab & Detection Projects
 
-This repository documents a home-built Active Directory environment designed for blue team detection engineering, log analysis, and incident response practice. 
-The goal of this lab is to simulate various real-world attacks and build detection logic using Windows Event Logs, Sysmon, and Splunk.
+This repository documents my cybersecurity home lab and blue team projects focused on threat detection, log analysis, incident response, and Active Directory security.
 
-## Lab Environment
-- Windows Server 2019 — Active Directory Domain Controller (lab.local)
-- Windows 10/11/Client VM (if applicable)
-- Kali Linux — Attack simulation machine
-- Windows Event Viewer/Sysmon
+The purpose of this repository is to simulate realistic attacker activity, investigate security events, develop detection logic, and document investigations using industry-standard defensive tools.
+
+---
+
+# Lab Environment
+
+## Infrastructure
+- Windows Server 2019 (Active Directory Domain Controller)
+- Windows 10 Client
+- Kali Linux (Attack Machine)
+
+## Security Tools
 - Splunk Enterprise
-- Advanced Audit Policy enabled
+- Sysmon
+- Windows Event Viewer
+- Nmap
+- Wireshark
+- Python
+- Advanced Windows Audit Policies
 
-## Project Objectives
-- Simulate common authentication-based attacks
-- Analyze Windows Security/Splunk Event Logs
-- Build detection logic for suspicious behavior
-- Document incident response workflow
-- Practice SOC-style investigation
+---
 
 ## Skills Demonstrated
+
+- Active Directory administration
 - Windows Event Log analysis
-- Active Directory authentication monitoring
-- Incident detection & triage
-- Basic detection engineering
-- Security log interpretation (4625, 4624, etc.)
+- Splunk log ingestion and searching
+- Detection engineering
+- Threat hunting
+- Incident response documentation
+- Python scripting for security automation
+- Log parsing and IOC detection
+- Authentication monitoring
+- Network traffic analysis
+- MITRE ATT&CK mapping
+- Security investigation workflow
 
-## Evidence & Artifacts 
-- Screenshots of Event Viewer logs
-- Splunk / dashboard queries
-- Timeline of attack simulation
-- Detection queries 
+---
 
-## Notes
-This project was built in a controlled lab environment to simulate attacker behavior and improve defensive detection skills.
+# Repository Projects
+
+## Python IOC Detection Tool
+
+Developed a Python script to automate the detection of known malicious IP addresses by comparing network connection logs against a list of Indicators of Compromise (IOCs).
+
+Features include:
+
+- Parses network log files
+- Compares IP addresses against known malicious IOCs
+- Generates detection results
+- Demonstrates basic security automation using Python
+
+---
+
+## SOC Investigation Project
+
+Performed a simulated blue team investigation by analyzing Windows Security Logs and network activity after a reconnaissance attack.
+
+Project includes:
+
+- Executive Summary
+- Environment Overview
+- Detection Analysis
+- Timeline of Events
+- Evidence Collection
+- MITRE ATT&CK Mapping
+- Incident Impact Assessment
+- Response Actions
+- Lessons Learned
+
+---
+
+## Splunk Detection Lab
+
+Configured Splunk Enterprise to ingest Windows Event Logs and build searches for security monitoring.
+
+Detection examples include:
+
+- Failed logons (Event ID 4625)
+- Successful logons (4624)
+- Account lockouts
+- Privilege changes
+- Process creation events
+- Network reconnaissance
+
+---
+
+# Learning Objectives
+
+- Improve SOC analyst skills
+- Practice incident investigation
+- Develop defensive detection logic
+- Strengthen Active Directory knowledge
+- Build a professional cybersecurity portfolio
+
+---
+
+# Evidence & Artifacts
+
+Each project contains supporting documentation such as:
+
+- Screenshots
+- Splunk search queries
+- Event logs
+- Network captures
+- Investigation reports
+- Timelines
+- Detection logic
+
+---
+
+# Future Enhancements
+
+Planned additions include:
+
+- Brute-force attack detection
+- Pass-the-Hash detection
+- Kerberoasting detection
+- PowerShell attack detection
+- Lateral movement investigations
+- Sigma rule development
+- Custom Splunk dashboards
+- Additional threat hunting scenarios
+
+---
+
+# Disclaimer
+
+All activities in this repository were performed in an isolated lab environment created for educational purposes. No testing was conducted against systems without authorization.
