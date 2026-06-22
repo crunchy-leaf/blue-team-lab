@@ -6,7 +6,7 @@ The following actions were recommended based on the investigation findings:
 - Confirmed that the activity was limited to reconnaissance and that no indicators of compromise were identified beyond network scanning.
 - Reviewed exposed services identified during the scan and evaluated whether each service was required for normal operations.
 - Identified a monitoring visibility gap in endpoint telemetry for inbound reconnaissance activity.
-= Recommended supplementing endpoint monitoring with network-based detection technologies such as firewall logging or a network intrusion detection system.
+- Recommended supplementing endpoint monitoring with network-based detection technologies such as firewall logging or a network intrusion detection system.
 - Recommended forwarding additional network security logs into Splunk to improve visibility and enable correlation of reconnaissance activity with endpoint events.
 
 # Lessons Learned
