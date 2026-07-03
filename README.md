@@ -1,6 +1,6 @@
 # Blue Team Lab & Detection Projects
 
-This repository documents my cybersecurity home lab and blue team projects focused on threat detection, log analysis, incident response, and Active Directory security.
+This repository documents my cybersecurity home lab and blue team projects and web application security (WAF development) focused on threat detection, log analysis, incident response, and Active Directory security.
 
 The purpose of this repository is to simulate realistic attacker activity, investigate security events, develop detection logic, and document investigations using industry-standard defensive tools.
 
@@ -38,10 +38,42 @@ The purpose of this repository is to simulate realistic attacker activity, inves
 - Network traffic analysis
 - MITRE ATT&CK mapping
 - Security investigation workflow
+- Web application security and WAF rule development
 
 ---
 
 # Repository Projects
+
+## Python Web Application Firewall (WAF)
+
+A custom-built Web Application Firewall implemented in Python using Flask. This project functions as a reverse proxy that inspects incoming HTTP requests and blocks malicious traffic based on regex-based detection rules.
+
+The WAF analyzes multiple components of each request including:
+- URL path
+- Query parameters
+- HTTP headers
+- Request body
+
+All inputs are normalized into a single inspection string and evaluated against a customizable rule engine.
+
+### Features
+- Reverse proxy architecture
+- Regex-based detection engine
+- Multi-vector request inspection
+- Blocking of common web attacks
+- Structured logging of malicious requests
+
+### Detected Attack Types
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Command Injection
+- Path Traversal
+
+### Key Learning Outcomes
+- HTTP request lifecycle understanding
+- Web security fundamentals
+- Pattern-based intrusion detection
+- Defensive security engineering
 
 ## Python IOC Detection Tool
 
