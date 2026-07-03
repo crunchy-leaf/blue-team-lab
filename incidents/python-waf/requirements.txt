@@ -1,2 +1,4 @@
 Flask==3.1.3
 requests
+
+# Note: Dependencies are intentionally minimal; Flask handles internal dependencies.
