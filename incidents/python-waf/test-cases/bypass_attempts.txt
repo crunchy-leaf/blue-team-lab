@@ -1,0 +1,5 @@
+%27%20OR%201=1--
+%3Cscript%3Ealert(1)%3C/script%3E
+..%2f..%2f..%2fetc%2fpasswd
+SeLeCt * FrOm users
+' oR '1'='1
