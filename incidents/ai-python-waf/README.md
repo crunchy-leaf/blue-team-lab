@@ -89,6 +89,13 @@ python-waf/
 │
 ├── logs/
 │
+├── test_cases/
+│   ├── bypass_attempts.txt
+│   ├── command_injection.txt
+│   ├── path_traversal.txt
+│   ├── sql_injection.txt
+│   └── xss.txt
+│
 ├── requirements.txt
 │
 └── README.md
@@ -112,6 +119,13 @@ python-waf/
 
 ---
 
+## Normal Request
+
+![Normal request to firewall](../../images/ai-python-waf/normal-web-request.png)
+**A legitimate request is sent through the WAF proxy and forwarded to the protected Flask application. Since no security rule is triggered, the request is allowed to reach the backend server.**
+
+---
+
 ## Example AI Response
 
 ```json
@@ -122,6 +136,9 @@ python-waf/
 }
 ```
 
+![Gemini response](../../images/ai-python-waf/sql-ai-terminal.png)
+**Here is an example of Gemini providing a structured security analysis containing the decision, risk level, and explanation for the SQLi attempt in the screenshot shown below. The AI analysis is only performed after a local WAF rule detects suspicious activity.**
+
 ---
 
 ## Example Attack
@@ -129,6 +146,15 @@ python-waf/
 ```
 http://127.0.0.1:8080/?username=' OR 1=1 --
 ```
+
+---
+
+## SQL Injection Detection
+![SQLi attempt blocked](../../images/ai-python-waf/sql-request.png)
+
+**An SQL injection payload is detected by the WAF rule engine. The suspicious request is analyzed by Gemini AI, which identifies the attack and returns a BLOCK decision. The request is prevented from reaching the protected application.**
+
+---
 
 Detection Flow:
 
