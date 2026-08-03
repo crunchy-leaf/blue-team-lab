@@ -1,0 +1,5 @@
+../../etc/passwd
+..\..\windows\system32
+....//....//etc/passwd
+/etc/passwd
+C:\Windows\System32
