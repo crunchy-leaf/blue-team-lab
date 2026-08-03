@@ -186,7 +186,7 @@ git clone https://github.com/crunchy-leaf/ai-python-waf.git
 Navigate into the project.
 
 ```
-cd python-waf
+cd ai-python-waf
 ```
 
 Install dependencies.
