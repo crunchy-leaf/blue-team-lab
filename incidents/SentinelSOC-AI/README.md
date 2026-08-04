@@ -11,6 +11,11 @@ The application simulates a simplified SOC workflow by collecting log data, iden
 # Demo
 
 
+
+https://github.com/user-attachments/assets/b76d1abb-4b38-4a03-84ee-363cc02dc473
+
+
+
 ## Dashboard
 
 ![SentinelSOC Dashboard](../../images/SentinelSOC-AI/soc-dashboard.png)
