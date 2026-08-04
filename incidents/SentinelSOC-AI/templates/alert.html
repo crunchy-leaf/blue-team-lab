@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SentinelSOC Alert</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        .analysis {
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            line-height: 1.6;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-light">
+
+
+<div class="container mt-5">
+
+
+    <a href="/" class="btn btn-secondary mb-4">
+        ← Back to Dashboard
+    </a>
+
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-dark text-white">
+
+            <h3 class="mb-0">
+                Security Alert Details
+            </h3>
+
+        </div>
+
+
+        <div class="card-body">
+
+
+            <div class="row">
+
+
+                <div class="col-md-6">
+
+                    <h5>Attack Type</h5>
+                    <p>{{ alert.type }}</p>
+
+
+                    <h5>Severity</h5>
+
+                    {% if alert.severity == "High" %}
+
+                    <span class="badge bg-danger">
+                        High
+                    </span>
+
+                    {% elif alert.severity == "Medium" %}
+
+                    <span class="badge bg-warning text-dark">
+                        Medium
+                    </span>
+
+                    {% else %}
+
+                    <span class="badge bg-success">
+                        Low
+                    </span>
+
+                    {% endif %}
+
+
+                </div>
+
+
+                <div class="col-md-6">
+
+
+                    <h5>Source IP</h5>
+                    <p>{{ alert.source_ip }}</p>
+
+
+                    <h5>Timestamp</h5>
+                    <p>{{ alert.timestamp }}</p>
+
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <h5>Endpoint</h5>
+
+            <div class="alert alert-secondary">
+                {{ alert.endpoint }}
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="card shadow">
+
+
+        <div class="card-header bg-primary text-white">
+
+            <h3 class="mb-0">
+                🤖 AI Security Analysis
+            </h3>
+
+        </div>
+
+
+        <div class="card-body">
+
+
+            <div class="analysis">
+
+                {{ analysis|safe }}
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
