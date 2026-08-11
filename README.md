@@ -8,7 +8,7 @@ The goal of this portfolio is to simulate real-world security operations by gene
 
 # Projects
 
-## AI SOC Analyst Platform
+## [AI SOC Analyst Platform](./SentinelSOC-AI)
 
 A security operations automation project that analyzes logs, detects suspicious activity, and uses AI-assisted analysis to generate SOC-style investigation summaries.
 
@@ -43,7 +43,7 @@ The AI analysis provides:
 
 ---
 
-## AI-Enhanced Web Application Firewall (WAF)
+## [AI-Enhanced Web Application Firewall (WAF)](./ai-python-waf)
 
 An enhanced version of my custom Python Web Application Firewall that adds AI-assisted security analysis to improve threat classification and investigation.
 
