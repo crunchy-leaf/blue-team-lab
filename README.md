@@ -121,7 +121,7 @@ A Python-based security automation script that identifies potentially malicious 
 
 ---
 
-# SOC Investigation Project
+# [SOC Investigation Project](./incidents/intrusion-kill-chain)
 
 A simulated blue team investigation analyzing Windows security events and network activity following attacker reconnaissance.
 
@@ -139,7 +139,7 @@ A simulated blue team investigation analyzing Windows security events and networ
 
 ---
 
-# Splunk Detection Lab
+# [Splunk Detection Lab](./incidents/splunk-dashboard)
 
 Configured Splunk Enterprise to ingest Windows telemetry and create security monitoring searches.
 
